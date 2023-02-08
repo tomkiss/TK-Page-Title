@@ -4,12 +4,12 @@ This Expression Engine Add-On allows you to automatically output your own image-
 
 ## Requirements
 
- - The CP JQuery extension is required in order to use the included JQuery colour picker [1.1.0]
+ - The [CP JQuery extension](http://www.ngenworks.com/software/ee/cp_jquery/) is required in order to use the included JQuery colour picker [1.1.0]
  - Tested on Expression Engine 1.6.4, 1.6.5 and 1.6.6 (may work with lower versions...)
  - Tested only on PHP 5.2.6 (should work with lower versions...)
  - Requires GD 2.0.1+
  - Knowledge of Cascading Style Sheets (CSS)
- - Knowledge of the Internet Explorer .htc PNG fix to allow for full cross browser support
+ - Knowledge of the [Internet Explorer .htc PNG](http://www.twinhelix.com/css/iepngfix/) fix to allow for full cross browser support
 
 
 ## Parameters
@@ -50,27 +50,34 @@ With that complete, you are now ready to roll.
 
 The following example should give you an idea of how to use the TK Page Title module.
 
-```php
-{exp:tk_page_title}My title or weblog title {title} {/exp:tk_page_title}```
+```twig
+{exp:tk_page_title}My title or weblog title {title} {/exp:tk_page_title}
+```
 
 This will output the following HTML:
 
 ```html
-<h1 style="display:block; background-repeat: no-repeat; background-image: url(/themes/tk_page_title/pagetitles/sample.png); height: 32px; width: 600px" class="pagetitle" title="My title or weblog title"><span style="display: none">My title or weblog title</span></h1>```
+<h1 style="display:block; background-repeat: no-repeat; background-image: url(/themes/tk_page_title/pagetitles/sample.png); height: 32px; width: 600px" class="pagetitle" title="My title or weblog title"><span style="display: none">My title or weblog title</span></h1>
+```
 
 ## Control Panel
 
 Here you can create different types of page title, each with their own fonts, sizes and colours...
+
+![tk_page_title_1 1 0_screen1](https://user-images.githubusercontent.com/183310/217543722-cd856494-4ea5-40ea-9041-f9edd3b1be6b.jpg)
+
+![tk_page_title_1 1 0_screen2](https://user-images.githubusercontent.com/183310/217543763-ba04da8c-5fa1-4fb8-8a87-90b30ba51f69.jpg)
+
 
 ## Important notes
 
 Remember that if you upload unlicensed fonts to your server for use with TK Page Title, you may be breaking the law! You are advised to store your fonts outside of your sites public directory (public_html, www, httpdocs or similar); doing this will almost guarantee unauthorised access/distribution of your fonts.
 Feedback and discussion
 
-If you have any feedback, feel free to comment on this page. There is also an EE Forum post and the module is listed on devot-ee.
+If you have any feedback, feel free to comment on this page. There is also an [EE Forum post](http://expressionengine.com/forums/viewthread/94514/) and the module is [listed on devot-ee](http://devot-ee.com/add-ons/modules/tk-page-title/).
 
 ## Credits
 
-In addition to its core code, written by myself, this module uses other PHP scripts made freely available on the web. Much thanks to Andrew Collington for his imagemask class and to Matsuda Shota for his awesome font classes.
+In addition to its core code, written by myself, this module uses other PHP scripts made freely available on the web. Much thanks to [Andrew Collington](http://php.amnuts.com/) for his imagemask class and to [Matsuda Shota](http://sgssweb.com/) for his awesome font classes.
 
-For more information, please visit: https://2010.tomkiss.net/ee/add-on/tk_page_title
+For more information, please visit: [tomkiss.net/ee/add-on/tk_page_title](https://2010.tomkiss.net/ee/add-on/tk_page_title)
